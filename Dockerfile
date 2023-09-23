@@ -7,7 +7,7 @@ FROM node:20-alpine3.17 as build
 WORKDIR /usr/local/app
 
 # Add the source code to app
-COPY node_modules ./ /usr/local/app/
+COPY . .
 
 # Install all the dependencies
 RUN npm install
